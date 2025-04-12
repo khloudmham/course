@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        @media(min-width: 600px){
+            body{
+                background-color: red;
+            }
+        }
+        @media(max-width: 599px){
+            body{
+                background-color: blue;
+            }
+        }
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #container > div{
+            background-color: springgreen;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+        #grid{
+            background-color: green;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+        }
+        .grid-item{
+            background-color: white ;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ht>Welcome to my web page </ht>
+    <div id ="container">
+        <div>1. This is some sample text of a div to demo felxbox.</div>
+        <div>2. This is some sample text of a div to demo felxbox.</div>
+        <div>3. This is some sample text of a div to demo felxbox.</div>
+        <div>4. This is some sample text of a div to demo felxbox.</div>
+        <div>5. This is some sample text of a div to demo felxbox.</div>
+        <div>6. This is some sample text of a div to demo felxbox.</div>
+        <div>7. This is some sample text of a div to demo felxbox.</div>
+        <div>8. This is some sample text of a div to demo felxbox.</div>
+        <div>9. This is some sample text of a div to demo felxbox.</div>
+        <div>10.This is some sample text of a div to demo felxbox.</div>
+        <div>11.This is some sample text of a div to demo felxbox.</div>
+    </div>
+    <br>
+    <div id="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+
+    </div>
+
+</body>
+</html>
